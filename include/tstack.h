@@ -2,7 +2,7 @@
 #ifndef INCLUDE_TSTACK_H_
 #define INCLUDE_TSTACK_H_
 
-template<typename T, int Maxsize>
+template<typename T, int MaxSize>
 class TStack {
  private:
     T data[MaxSize];
