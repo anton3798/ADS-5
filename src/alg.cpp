@@ -1,8 +1,8 @@
 // Copyright 2025 NNTU-CS
 #include <string>
 #include <map>
-#include "tstack.h"
 #include <cctype>
+#include "tstack.h"
 
 int getPriority(char op) {
     switch (op) {
@@ -68,7 +68,7 @@ std::string infx2pstfx(const std::string& inf) {
     return postfix;
 }
 
-int eval(const std::string& pref) {
+int eval(const std::string& post) {
   TStack<int, 100> numbers;
 
     for (size_t i = 0; i < post.length(); ++i) {
