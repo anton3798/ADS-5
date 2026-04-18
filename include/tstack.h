@@ -2,12 +2,13 @@
 #ifndef INCLUDE_TSTACK_H_
 #define INCLUDE_TSTACK_H_
 
-template<typename T, int size>
+template<typename T, int Maxsize>
 class TStack {
-private:
+ private:
     T data[MaxSize];
     int topIndex;
-public:
+
+ public:
     TStack() : topIndex(0) {}
     void push(const T& value) {
         if (topIndex < MaxSize) {
