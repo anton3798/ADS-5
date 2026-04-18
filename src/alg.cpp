@@ -84,7 +84,7 @@ int eval(const std::string& pref) {
             continue;
         }
         switch (c) {
-            case '+': case '-': case '*': case '/':
+            case '+': case '-': case '*': case '/': {
                 int right = numbers.pop();
                 int left = numbers.pop();
                 int res = 0;
@@ -104,6 +104,7 @@ int eval(const std::string& pref) {
                 }
                 numbers.push(res);
                 break;
+            }
             default:
                 break;
         }
